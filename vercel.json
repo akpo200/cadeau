@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/ambassadeur",
+            "destination": "/ambassadeur.html"
+        },
+        {
+            "source": "/ambassadeur/",
+            "destination": "/ambassadeur.html"
+        }
+    ]
+}
