@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ambassadeurs - CADEAU</title>
+    <meta name="description" content="Rejoignez le programme ambassadeur Cadeau et gagnez de l'argent." />
+</head>
+
+<body>
+    <div id="app">
+        <section class="chapter banner-section" style="min-height: 30vh;">
+            <div class="content align-center">
+                <a href="/" style="margin-bottom: 2rem; color: #fff; font-size: 0.9rem;">← Retour au site</a>
+                <h1 class="banner-title fade-in">Espace Ambassadeur</h1>
+            </div>
+        </section>
+
+        <section class="chapter">
+            <div class="content">
+                <div style="display: grid; gap: 4rem;">
+
+                    <!-- BLOCK 1 : INSCRIPTION (TALLY) -->
+                    <div class="reveal">
+                        <h2 class="section-title">1. Inscription</h2>
+                        <p class="section-text">Remplissez ce formulaire pour valider votre statut et recevoir vos
+                            paiements.</p>
+
+                        <!-- Tally Embed -->
+                        <div style="background: transparent; padding: 1rem; border-radius: 4px;">
+                            <iframe
+                                data-tally-src="https://tally.so/embed/0Q8ML0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                                loading="lazy" width="100%" height="242" frameborder="0" marginheight="0"
+                                marginwidth="0" title="Cadeau ambassadeurs"></iframe>
+                            <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
+                        </div>
+                    </div>
+
+                    <!-- BLOCK 2 : OUTIL DE VENTE -->
+                    <div class="reveal">
+                        <h2 class="section-title">2. Votre Outil de Vente</h2>
+                        <p class="section-text">Déjà inscrit ? Créez votre lien ici.</p>
+
+                        <div class="ambassador-box">
+                            <p class="small-label">Entrez votre prénom pour obtenir votre lien magique :</p>
+                            <div class="input-group">
+                                <input type="text" id="ambassadorName" placeholder="Votre Prénom (ex: SOPHIE)" />
+                                <button id="generateBtn">CRÉER MON LIEN</button>
+                            </div>
+                            <p id="feedbackMsg" class="feedback-msg"></p>
+                        </div>
+
+                        <div
+                            style="margin-top: 2rem; background: rgba(212, 175, 55, 0.1); padding: 1.5rem; border-left: 2px solid var(--color-gold);">
+                            <h3 style="color: var(--color-gold); font-size: 1.2rem; margin-bottom: 0.5rem;">Comment ça
+                                marche ?</h3>
+                            <ul style="list-style: none; font-size: 0.9rem; color: #ccc; line-height: 1.8;">
+                                <li>1. Vous copiez ce lien.</li>
+                                <li>2. Vous l'envoyez à vos contacts.</li>
+                                <li>3. Si quelqu'un clique et commande, le message WhatsApp indiquera
+                                    <strong>automatiquement</strong> votre prénom.
+                                </li>
+                                <li>4. Nous validons la vente et créditons votre compte.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Cadeau.cycyink.com - Tous droits réservés.</p>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
